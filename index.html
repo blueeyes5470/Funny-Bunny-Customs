@@ -1,66 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* This creates the colorful slime-themed background */
         body {
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 40px;
-            line-height: 1.8;
-            color: #333;
-            background-color: #fffafa;
+            background: linear-gradient(135deg, #ffe0f0 0%, #e0f7ff 50%, #fff3e0 100%);
+            background-attachment: fixed;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive; /* Fun, bubbly font */
+            margin: 0;
+            padding: 20px;
+            color: #444;
         }
-        h1 {
-            color: #d63031;
-        }
-        img {
-            margin: 20px auto;
-            border-radius: 20px;
-            display: block;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 90%;
-            height: auto;
-        }
-        .container {
-            max-width: 600px;
+
+        /* The main white box for your content */
+        .shop-container {
+            max-width: 800px;
             margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9); /* See-through white */
+            padding: 30px;
+            border-radius: 40px; /* Extra round corners */
+            border: 8px solid #ffaddb; /* Pink slime border */
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff4757;
+            font-size: 3em;
+            text-shadow: 2px 2px #ffafbd;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #747d8c;
+            margin-bottom: 30px;
+        }
+
+        /* Styling for the slime items */
+        .slime-card {
+            background: white;
+            border-radius: 25px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 3px dashed #70a1ff;
+        }
+
+        h2 { color: #2ed573; }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* The "Slime Drop" Buy Button */
+        .buy-button {
+            background: #ff6b81;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-radius: 100px;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 6px 0 #eb4d4b;
+            transition: all 0.2s;
+        }
+
+        .buy-button:hover {
+            transform: translateY(3px);
+            box-shadow: 0 3px 0 #eb4d4b;
+            background: #ff4757;
+        }
+
+        .size-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .size-tag {
+            background: #eccc68;
+            padding: 5px 15px;
+            border-radius: 15px;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Peppermint Swirl Scented Slime</h1>
-        <p>
-            <strong>Scent:</strong> Sweet peppermint<br>
-            <strong>Texture:</strong> Fluffy cloud slime
-        </p>
-        <p>
-            Peppermint Swirl is a holiday classic.<br>
-            This red and white swirled slime has an incredibly soft, fluffy cloud texture that drizzles beautifully.<br>
-            Scented with sweet, refreshing peppermint, it's a wonderful stress-relieving scent.<br>
-            Each order comes with a dazzling red glitter packet and a cute mini candy cane.
-        </p>
-        <p>
-            <strong>What you get:</strong><br>
-            Peppermint swirl scented slime<br>
-            A care sheet<br>
-            A small packet of activator powder
-        </p>
-        <img src="slime1.jpg" alt="Peppermint Swirl Slime image 1">
-        <img src="slime2.jpg" alt="Peppermint Swirl Slime image 2">
-        <h2>Jar Sizes and Purchase Options</h2>
-        <p>
-            Choose your perfect size:<br>
-            - 2 oz Jar<br>
-            - 4 oz Jar<br>
-            - 8 oz Jar<br>
-            - 16 oz Jar
-        </p>
-        <p>
-            Purchase options and links will be integrated here.
-        </p>
+<div class="shop-container">
+    <h1>✨ Bunny Funny Customs ✨</h1>
+    <p class="subtitle">The gooiest, fluffiest, most colorful slime on the planet!</p>
+
+    <div class="slime-card">
+        <h2>🔴 Peppermint Swirl ⚪</h2>
+        <p>A super-stretchy cloud slime that smells exactly like a candy cane. Comes with red glitter!</p>
+        <img src="slime1.jpg" alt="Peppermint Slime">
     </div>
+
+    <div class="slime-card">
+        <h2>🔹 Cotton Candy Cloud 🔸</h2>
+        <p>Swirled pink and blue. It is so soft, it feels like holding a real cloud!</p>
+        <img src="slime2.jpg" alt="Cotton Candy Slime">
+    </div>
+
+    <div class="slime-card" style="border-color: #ffa502;">
+        <h3>Pick Your Size!</h3>
+        <div class="size-list">
+            <span class="size-tag">2oz</span>
+            <span class="size-tag">4oz</span>
+            <span class="size-tag">6oz</span>
+            <span class="size-tag">8oz</span>
+        </div>
+    </div>
+
+    <a href="mailto:your-funnybunnyslimeshop@gmail.com" class="buy-button">💧 CLICK TO ORDER SLIME 💧</a>
+    
+    <p style="margin-top: 30px; font-size: 0.8em;">All orders come with a care sheet and activator!</p>
+</div>
 
 </body>
 </html>
